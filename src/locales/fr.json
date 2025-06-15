@@ -1,63 +1,115 @@
 {
   "RootLayout": {
-    "home_link": "Accueil",
-    "about_link": "A propos",
-    "counter_link": "Compteur",
-    "portfolio_link": "Portfolio",
+    "home_link": "Maison",
+    "about_link": "À propos",
+    "counter_link": "Comptoir",
+    "portfolio_link": "Portefeuille",
     "sign_in_link": "Se connecter",
     "sign_up_link": "S'inscrire"
   },
   "BaseTemplate": {
-    "description": "Code de démarrage pour Next.js avec Tailwind CSS",
-    "made_with": "Fait avec <author></author>."
+    "description": "Code de démarrage pour votre chauffe-plaque NextJS avec le vent arrière CSS",
+    "made_with": "Fabriqué avec <auteur> </auteur>."
   },
   "Index": {
-    "meta_title": "Présentation de Next.js Boilerplate",
-    "meta_description": "Next js Boilerplate est le code de démarrage parfait pour votre projet. Construisez votre application React avec le framework Next.js.",
-    "sponsors_title": "Partenaires"
+    "meta_title": "Getsany - téléchargeur vidéo en ligne gratuit | X (Twitter) Téléchargeur vidéo YouTube",
+    "meta_description": "Téléchargement gratuit en ligne de vidéos HD, audio et images de X (Twitter), YouTube et d'autres plateformes. Aucune inscription requise, prend en charge plusieurs formats, l'analyse rapide des liens, le téléchargement en un clic.",
+    "meta_keywords": "Téléchargement vidéo Twitter, téléchargement vidéo YouTube, x téléchargement vidéo, téléchargement vidéo en ligne, téléchargement vidéo gratuit, analyse vidéo, extraction audio",
+    "og_title": "Getsany - téléchargeur vidéo en ligne gratuit",
+    "og_description": "Téléchargement gratuit de vidéos HD et d'audio depuis X (Twitter), YouTube et d'autres plateformes, aucune inscription requise, analyse rapide",
+    "twitter_title": "Getsany - téléchargeur vidéo en ligne gratuit",
+    "twitter_description": "Téléchargement gratuit de vidéos HD et d'audio depuis X (Twitter), YouTube et d'autres plateformes",
+    "hero_title": "Téléchargeur vidéo en ligne gratuit",
+    "hero_subtitle": "Prend en charge X (Twitter), YouTube et autres téléchargements vidéo de plate-forme traditionnels",
+    "hero_features": "Qualité HD • Extraction audio • Téléchargement d'image • Aucune enregistrement • complètement gratuit",
+    "button_x_download": "X (twitter) Télécharger",
+    "button_youtube_download": "Téléchargement YouTube",
+    "usage_guide_title": "💡 Comment utiliser",
+    "step1_title": "Copier le lien URL vidéo",
+    "step1_description": "Copiez le lien URL multimédia que vous souhaitez télécharger à partir de X (Twitter), YouTube et d'autres plateformes",
+    "step2_title": "Coller dans la boîte d'entrée",
+    "step2_description": "Collez le lien copié dans la zone d'entrée ci-dessous",
+    "step3_title": "Cliquez sur le bouton d'analyse",
+    "step3_description": "Cliquez sur le bouton \"Analyser la vidéo\" et attendez quelques secondes pour que l'analyse soit terminée",
+    "step4_title": "Sélectionnez le format à télécharger",
+    "step4_description": "Après l'analyse réussie, sélectionnez le format et la qualité requis, puis cliquez sur Télécharger",
+    "features_title": "🚀 Fonctionnalités puissantes",
+    "features_description": "Solution professionnelle de téléchargement vidéo prenant en charge plusieurs plateformes et formats, vous offrant la meilleure expérience de téléchargement",
+    "feature_x_title": "Téléchargement vidéo x (Twitter)",
+    "feature_x_description": "Prend en charge le téléchargement de tous les formats vidéo à partir de la plate-forme X, y compris des vidéos HD et des animations GIF",
+    "feature_youtube_title": "Téléchargement vidéo YouTube",
+    "feature_youtube_description": "Téléchargez les vidéos YouTube avec une prise en charge de plusieurs options de qualité, y compris 1080p, 4K",
+    "feature_audio_title": "Extraction audio",
+    "feature_audio_description": "Extraire audio de haute qualité à partir de vidéos, prend en charge les formats MP3, MP4 et d'autres formats",
+    "feature_image_title": "Téléchargement d'image",
+    "feature_image_description": "Téléchargez des miniatures vidéo et des images des médias sociaux tout en maintenant la qualité originale",
+    "feature_speed_title": "Analyse rapide",
+    "feature_speed_description": "L'algorithme d'analyse intelligente obtient des liens de téléchargement en secondes, stables et fiables",
+    "feature_security_title": "Sûr et sans publicité",
+    "feature_security_description": "Aucune inscription ou connexion requise, pas de stockage de données utilisateur, une expérience sans publicité propre",
+    "detailed_steps_title": "📋 Étapes d'utilisation détaillées",
+    "detailed_steps_description": "Juste quatre étapes simples pour télécharger votre contenu vidéo préféré. Notre système d'analyse intelligente reconnaît automatiquement les types de liens et vous offre les options de téléchargement de la plus haute qualité.",
+    "supported_platforms_title": "🎯 Plateformes prises en charge",
+    "platform_x_features": "Vidéos, gifs, images",
+    "platform_youtube_features": "Vidéos, audio",
+    "platform_coming_soon": "À venir",
+    "faq_title": "❓ Questions fréquemment posées",
+    "faq1_question": "Dois-je enregistrer un compte?",
+    "faq1_answer": "Pas du tout! Getsany fournit un service en ligne gratuit qui peut être utilisé sans enregistrement ou connexion.",
+    "faq2_question": "Quelles qualités vidéo sont prises en charge?",
+    "faq2_answer": "Prend en charge plusieurs options de qualité de la définition standard à 4K. Les qualités prises en charge spécifiques dépendent de la qualité vidéo originale.",
+    "faq3_question": "Quelle est la vitesse de la vitesse de téléchargement?",
+    "faq3_answer": "La vitesse de téléchargement dépend principalement de vos conditions réseau et de votre taille de fichier vidéo. Nos serveurs offrent une expérience de téléchargement stable et rapide.",
+    "faq4_question": "Les données sont-elles sécurisées?",
+    "faq4_answer": "Nous ne stockons aucune de vos données personnelles ou ne téléchargez pas d'enregistrements. Tout le traitement est terminé localement dans votre navigateur.",
+    "footer_description": "Outil de téléchargement vidéo gratuit, sécurisé et rapide",
+    "footer_x_link": "X (twitter) Télécharger",
+    "footer_youtube_link": "Téléchargement YouTube",
+    "footer_copyright": "© 2025 GetSany.com - outil professionnel de téléchargement vidéo en ligne",
+    "sponsors_title": "Sponsors"
   },
   "Counter": {
-    "meta_title": "Compteur",
-    "meta_description": "Un exemple d'opération DB",
-    "loading_counter": "Chargement du compteur...",
-    "security_powered_by": "Sécurité, détection de bot et rate limiting propulsés par"
+    "meta_title": "Comptoir",
+    "meta_description": "Un exemple de fonctionnement de la base de données",
+    "loading_counter": "Compteur de chargement ...",
+    "error_reporting_powered_by": "Rapports d'erreur alimentés par"
   },
   "CounterForm": {
     "presentation": "Le compteur est stocké dans la base de données et incrémenté par la valeur que vous fournissez.",
-    "label_increment": "Incrémenter de",
-    "button_increment": "Incrémenter"
+    "label_increment": "Incrément de",
+    "button_increment": "Incrément"
   },
   "CurrentCount": {
-    "count": "Nombre : {count}"
+    "count": "Count: {count}"
   },
   "About": {
-    "meta_title": "A propos",
-    "meta_description": "A propos description",
-    "about_paragraph": "Bienvenue sur notre page À propos ! Nous sommes une équipe de passionnés et dévoués à la création de logiciels.",
-    "translation_powered_by": "Traduction propulsée par"
+    "meta_title": "À propos",
+    "meta_description": "À propos de la description de la page",
+    "about_paragraph": "Bienvenue sur notre page à propos! Nous sommes une équipe d'individus passionnés dédiés à la création de logiciels incroyables.",
+    "translation_powered_by": "Traduction alimentée par"
   },
   "Portfolio": {
-    "meta_title": "Portfolio",
-    "meta_description": "Bienvenue sur la page de mon portfolio !",
-    "presentation": "Bienvenue sur ma page portfolio ! Vous trouverez ici une collection soigneusement organisée de mon travail et de mes réalisations. À travers ce portfolio, je mets en valeur mon expertise, ma créativité et la valeur que je peux apporter à vos projets.",
-    "portfolio_name": "Portfolio {name}",
-    "error_reporting_powered_by": "Rapport d'erreur propulsé par",
-    "coverage_powered_by": "Couverture de code propulsée par"
+    "meta_title": "Portefeuille",
+    "meta_description": "Bienvenue sur ma page de portefeuille!",
+    "presentation": "Bienvenue sur ma page de portefeuille! Ici, vous trouverez une collection soigneusement organisée de mon travail et de mes réalisations. Grâce à ce portefeuille, je dois présenter mon expertise, ma créativité et la valeur que je peux apporter à vos projets.",
+    "portfolio_name": "Portfolio {nom}",
+    "error_reporting_powered_by": "Rapports d'erreur alimentés par",
+    "coverage_powered_by": "Couverture de code alimentée par"
   },
   "PortfolioSlug": {
-    "meta_title": "Portfolio {slug}",
-    "meta_description": "Description du Portfolio {slug}",
-    "header": "Portfolio {slug}",
-    "content": "Créé un ensemble de matériel promotionnel et d'éléments de marquage pour un événement d'entreprise. Conçu un thème visuellement unifié, englobant un logo, des affiches, des bannières et des actifs numériques. Intégrer l'identité de marque du client tout en l'insufflant à une approche contemporaine et innovante.",
-    "code_review_powered_by": "Code review propulsé par"
+    "meta_title": "Portfolio {Slug}",
+    "meta_description": "Portfolio {slug} Description",
+    "header": "Portfolio {Slug}",
+    "content": "A créé un ensemble de documents promotionnels et d'éléments de marque pour un événement d'entreprise. Craft un thème visuellement unifié, englobant un logo, des affiches, des bannières et des actifs numériques. A intégré l'identité de la marque du client tout en les affusant avec une approche contemporaine et innovante. A recueilli des réponses favorables des participants à l'événement, entraînant un événement réussi avec un engagement accru des participants et une visibilité accrue de la marque.",
+    "log_management_powered_by": "Gestion des journaux propulsée par"
   },
   "SignIn": {
     "meta_title": "Se connecter",
-    "meta_description": "Connectez-vous à votre compte avec facilité."
+    "meta_description": "Connectez-vous de manière transparente à votre compte avec notre processus de connexion convivial."
   },
   "SignUp": {
     "meta_title": "S'inscrire",
-    "meta_description": "Créez un compte facilement grâce à notre processus d'inscription intuitif."
+    "meta_description": "Créez sans effort un compte via notre processus d'inscription intuitif."
   },
   "Dashboard": {
     "meta_title": "Tableau de bord",
@@ -65,11 +117,153 @@
     "alternative_message": "Vous voulez créer votre SaaS plus rapidement en utilisant la même stack ? Essayez <url></url>."
   },
   "UserProfile": {
-    "meta_title": "Profil de l'utilisateur"
+    "meta_title": "Profil utilisateur"
   },
   "DashboardLayout": {
     "dashboard_link": "Tableau de bord",
-    "user_profile_link": "Gérer votre compte",
-    "sign_out": "Se déconnecter"
+    "user_profile_link": "Gérez votre compte",
+    "sign_out": "se déconnecter"
+  },
+  "X": {
+    "analysis": "Analyser",
+    "analyzing": "Analyse",
+    "meta_title": "X (Twitter) Downloader vidéo - Outil de téléchargement en ligne gratuit",
+    "meta_description": "Outil de téléchargement vidéo professionnel X (Twitter), prend en charge les téléchargements vidéo, image et audio HD, aucune inscription requise, complètement gratuite",
+    "badge_text": "📱 X (Twitter) Downloader dédié",
+    "title": "Téléchargeur de vidéos (Twitter)",
+    "description": "Outil de téléchargement vidéo professionnel X (Twitter), prend en charge les téléchargements vidéo, image et audio HD, aucune inscription requise, complètement gratuite",
+    "welcome_title": "📱 outil de téléchargement professionnel x (twitter)",
+    "welcome": "Service de téléchargement de contenu rapide, sécurisé, gratuit X (Twitter)",
+    "supported": "Plates-formes prises en charge",
+    "platform_windows": "Windows",
+    "platform_macos": "Macos",
+    "platform_android": "Androïde",
+    "platform_linux": "Linux",
+    "features_title": "✨ Fonctionnalités clés",
+    "feature_video_title": "Téléchargement vidéo HD",
+    "welcome3": "Prend en charge le téléchargement du contenu vidéo X (Twitter) de haute qualité",
+    "feature_image_title": "Téléchargement d'image",
+    "welcome4": "Enregistrement en un clic sur les images de X (Twitter)",
+    "feature_audio_title": "Extraction audio",
+    "welcome5": "Extraire les fichiers audio des vidéos",
+    "feature_speed_title": "Analyse rapide",
+    "welcome6": "Analyse de deuxième niveau, obtenez rapidement des liens de téléchargement",
+    "feature_security_title": "Sûr et fiable",
+    "feature_security_desc": "Aucun stockage de données utilisateur, protection de la confidentialité garantie",
+    "feature_free_title": "Complètement libre",
+    "feature_free_desc": "Aucune inscription requise, librement libre d'utiliser",
+    "steps_title": "📋 Étapes d'utilisation",
+    "step1_title": "Copier le lien",
+    "step1_desc": "Copiez le lien de contenu que vous souhaitez télécharger depuis x (Twitter)",
+    "step2_title": "Lien de pâte",
+    "step2_desc": "Collez le lien dans la zone d'entrée ci-dessus",
+    "step3_title": "Analyser le contenu",
+    "step3_desc": "Cliquez sur le bouton d'analyse et attendez quelques secondes",
+    "step4_title": "Télécharger instantanément",
+    "step4_desc": "Sélectionnez le format et cliquez sur le bouton de téléchargement",
+    "faq_title": "❓ Questions fréquemment posées",
+    "back_home": "← Retour à la maison",
+    "brand_name": "Se faire",
+    "brand_desc": "Outil de téléchargement vidéo professionnel x (twitter)",
+    "nav_home": "Maison",
+    "nav_x_download": "X (twitter) Télécharger",
+    "copyright": "© 2025 GetSany.com - X (Twitter) Expert en téléchargement vidéo",
+    "nav_youtube_download": "Téléchargement YouTube",
+    "input_placeholder": "Entrez le lien vidéo Twitter / X",
+    "download_button_tip": "Collez le lien vidéo ici",
+    "download": "Télécharger",
+    "downloading": "Téléchargement",
+    "validation_error1": "Veuillez saisir un lien vidéo",
+    "validation_error2": "Veuillez saisir un lien vidéo de plate-forme X valide",
+    "analysis_error": "Le téléchargement a échoué, veuillez réessayer plus tard",
+    "welcome2": "Bienvenue à Getsany, un outil conçu spécifiquement pour le téléchargement des vidéos à partir des articles de la plate-forme X. Nous offrons un service entièrement gratuit pour vous aider à obtenir facilement le contenu dont vous avez besoin.",
+    "faq": "FAQ",
+    "faq1": {
+      "question": "Qu'est-ce que Getsany / X et que fait-il?",
+      "answer": "GetSany / X est un outil de téléchargement vidéo professionnel pour la plate-forme X. Il aide les utilisateurs à télécharger et à enregistrer facilement le contenu vidéo de la plate-forme X sans enregistrement, entièrement gratuitement. Notre outil offre une expérience de téléchargement à haut débit et prend en charge la qualité vidéo haute définition, ce qui en fait un choix idéal pour obtenir du contenu vidéo à partir de la plate-forme X."
+    },
+    "faq2": {
+      "question": "Comment utiliser GetSany / X pour télécharger x vidéos?",
+      "answer": "Utiliser GetSany / X pour télécharger des vidéos est très simple:\n1. Copiez le lien vidéo x que vous souhaitez télécharger\n2. Collez le lien dans la boîte de saisie de notre site Web\n3. Cliquez sur le bouton \"Télécharger\"\n4. Choisissez la qualité vidéo que vous souhaitez\n5. Attendez que le téléchargement termine"
+    },
+    "faq3": {
+      "question": "Quels formats vidéo GetsAny / X supporte-t-il?",
+      "answer": "Getsany / X prend en charge le téléchargement dans divers formats vidéo:\n• Format MP4 HD\n• Format Webm\n• Format MP3 audio\nNous détectons automatiquement la meilleure qualité, et vous pouvez également choisir le format et la qualité appropriés en fonction de vos besoins."
+    },
+    "faq4": {
+      "question": "Est-ce que Getsany / X est en sécurité?",
+      "answer": "Oui, GetSany / X est complètement sûr. Notre service:\n• ne nécessite aucune installation logicielle\n• Ne collecte pas les informations personnelles de l'utilisateur\n• utilise le cryptage HTTPS pour protéger la transmission des données\n• Effectue régulièrement des analyses de sécurité et des mises à jour\n• est exempt d'annonces et de logiciels malveillants"
+    }
+  },
+  "Youtube": {
+    "analysis": "Analyser",
+    "analyzing": "Analyse",
+    "meta_title": "Téléchargeur de vidéos YouTube - outil de téléchargement en ligne gratuit",
+    "meta_description": "Outil de téléchargement vidéo YouTube professionnel, prend en charge les téléchargements vidéo et audio HD, aucune inscription requise, complètement gratuite",
+    "badge_text": "📹 Téléchargeur dédié YouTube",
+    "title": "Téléchargeur vidéo YouTube",
+    "description": "Outil de téléchargement vidéo YouTube professionnel, prend en charge les téléchargements vidéo et audio HD, aucune inscription requise, complètement gratuite",
+    "welcome_title": "📹 outil professionnel de téléchargement YouTube",
+    "welcome": "Service de téléchargement de contenu YouTube rapide, sécurisé et gratuit",
+    "supported": "Plates-formes prises en charge",
+    "platform_windows": "Windows",
+    "platform_macos": "MacOS",
+    "platform_android": "Android",
+    "platform_linux": "Linux",
+    "features_title": "✨ Fonctionnalités clés",
+    "feature_video_title": "Téléchargement vidéo HD",
+    "welcome3": "Prise en charge du téléchargement du contenu vidéo YouTube de haute qualité",
+    "feature_image_title": "Téléchargement des miniatures",
+    "welcome4": "Enregistrement en un clic des miniatures vidéo YouTube",
+    "feature_audio_title": "Extraction audio",
+    "welcome5": "Extraire les fichiers audio des vidéos",
+    "feature_speed_title": "Analyse rapide",
+    "welcome6": "Analyse de deuxième niveau, obtenez rapidement des liens de téléchargement",
+    "feature_security_title": "Sûr et fiable",
+    "feature_security_desc": "Aucun stockage de données utilisateur, protection de la confidentialité garantie",
+    "feature_free_title": "Complètement libre",
+    "feature_free_desc": "Aucune inscription requise, librement libre d'utiliser",
+    "steps_title": "📋 Étapes d'utilisation",
+    "step1_title": "Copier le lien",
+    "step1_desc": "Copiez le lien URL vidéo que vous souhaitez télécharger depuis YouTube",
+    "step2_title": "Lien de pâte",
+    "step2_desc": "Collez le lien dans la zone d'entrée ci-dessus",
+    "step3_title": "Analyser le contenu",
+    "step3_desc": "Cliquez sur le bouton d'analyse et attendez quelques secondes",
+    "step4_title": "Télécharger instantanément",
+    "step4_desc": "Sélectionnez le format et cliquez sur le bouton de téléchargement",
+    "faq_title": "❓ Questions fréquemment posées",
+    "back_home": "← Retour à la maison",
+    "brand_name": "Se faire",
+    "brand_desc": "Outil de téléchargement vidéo YouTube professionnel",
+    "nav_home": "Maison",
+    "nav_x_download": "X (twitter) Télécharger",
+    "nav_youtube_download": "Téléchargement YouTube",
+    "copyright": "© 2025 GetSany.com - Expert en téléchargement de vidéo YouTube",
+    "input_placeholder": "Entrez le lien vidéo YouTube",
+    "download_button_tip": "Collez le lien vidéo ici",
+    "download": "Télécharger",
+    "downloading": "Téléchargement",
+    "validation_error1": "Veuillez saisir un lien vidéo",
+    "validation_error2": "Veuillez saisir un lien vidéo YouTube valide",
+    "analysis_error": "Le téléchargement a échoué, veuillez réessayer plus tard",
+    "welcome2": "Bienvenue à Getsany, un outil conçu spécifiquement pour télécharger des vidéos à partir de YouTube. Nous offrons un service entièrement gratuit pour vous aider à obtenir facilement le contenu dont vous avez besoin.",
+    "faq": "FAQ",
+    "faq1": {
+      "question": "Qu'est-ce que Getsany / YouTube et que fait-il?",
+      "answer": "Getsany / YouTube est un outil de téléchargement vidéo professionnel pour YouTube. Il aide les utilisateurs à télécharger et à enregistrer facilement le contenu vidéo de YouTube sans inscription, entièrement gratuitement. Notre outil offre une expérience de téléchargement à haut débit et prend en charge la qualité vidéo haute définition, ce qui en fait un choix idéal pour obtenir du contenu vidéo à partir de YouTube."
+    },
+    "faq2": {
+      "question": "Comment utiliser GetSany / YouTube pour télécharger des vidéos YouTube?",
+      "answer": "Utiliser GetSany / YouTube pour télécharger des vidéos est très simple:\n1. Copiez le lien vidéo YouTube que vous souhaitez télécharger\n2. Collez le lien dans la boîte de saisie de notre site Web\n3. Cliquez sur le bouton \"Télécharger\"\n4. Choisissez la qualité vidéo que vous souhaitez\n5. Attendez que le téléchargement termine"
+    },
+    "faq3": {
+      "question": "Quels formats vidéo Getsany / YouTube Support?",
+      "answer": "Getsany / YouTube prend en charge le téléchargement dans divers formats vidéo:\n• Format MP4 HD (1080p, 720p, 480p)\n• Format Webm\n• Format MP3 audio\n• Format audio M4A\nNous détectons automatiquement la meilleure qualité, et vous pouvez également choisir le format et la qualité appropriés en fonction de vos besoins."
+    },
+    "faq4": {
+      "question": "Est-ce que Getsany / YouTube est sûr?",
+      "answer": "Oui, Getsany / YouTube est complètement en sécurité. Notre service:\n• ne nécessite aucune installation logicielle\n• Ne collecte pas les informations personnelles de l'utilisateur\n• utilise le cryptage HTTPS pour protéger la transmission des données\n• Effectue régulièrement des analyses de sécurité et des mises à jour\n• est exempt d'annonces et de logiciels malveillants"
+    }
   }
 }
