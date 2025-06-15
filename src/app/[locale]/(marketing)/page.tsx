@@ -1,6 +1,41 @@
-import { useTranslations } from 'next-intl';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
+
+type IIndexProps = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata(props: IIndexProps) {
+  const { locale } = await props.params;
+  const t = await getTranslations({
+    locale,
+    namespace: 'Index',
+  });
+  return {
+    title: t('meta_title'),
+    description: t('meta_description'),
+    keywords: t('meta_keywords'),
+    openGraph: {
+      title: t('og_title'),
+      description: t('og_description'),
+      url: 'https://getsany.com',
+      siteName: 'GetsAny',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: t('twitter_title'),
+      description: t('twitter_description'),
+    },
+    robots: {
+      index: true,
+      follow: true,
+    },
+    alternates: {
+      canonical: 'https://getsany.com',
+    },
+  };
+}
 
 const FeatureCard = ({ icon, title, description }: {
   icon: string;
@@ -32,37 +67,13 @@ const StepCard = ({ step, title, description }: {
   </div>
 );
 
-export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
-  const t = await getTranslations({ locale, namespace: 'Index' });
-
-  return {
-    title: t('meta_title'),
-    description: t('meta_description'),
-    keywords: t('meta_keywords'),
-    openGraph: {
-      title: t('og_title'),
-      description: t('og_description'),
-      url: 'https://getsany.com',
-      siteName: 'GetsAny',
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: t('twitter_title'),
-      description: t('twitter_description'),
-    },
-    robots: {
-      index: true,
-      follow: true,
-    },
-    alternates: {
-      canonical: 'https://getsany.com',
-    },
-  };
-}
-
-const HomePage = () => {
-  const t = useTranslations('Index');
+const HomePage = async (props: IIndexProps) => {
+  const { locale } = await props.params;
+  setRequestLocale(locale);
+  const t = await getTranslations({
+    locale,
+    namespace: 'Index',
+  });
 
   const features = [
     {

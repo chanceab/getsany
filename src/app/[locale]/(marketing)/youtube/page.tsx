@@ -6,10 +6,14 @@ import Link from 'next/link';
 import { AnalysisButton } from '@/components/x/AnalysisButton';
 import { Faq } from '@/components/x/Faq';
 
-export async function generateMetadata(props: { params: { locale: string } }) {
+type IIndexProps = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata(props: IIndexProps) {
   const t = await getTranslations({
-    locale: props.params.locale,
-    namespace: 'Youtube',
+    locale: (await props.params).locale,
+    namespace: 'X',
   });
 
   return {
