@@ -1,5 +1,6 @@
 {
   "name": "next-js-boilerplate",
+  "version": "3.71.0",
   "author": "Ixartz (https://github.com/ixartz)",
   "engines": {
     "node": ">=20"
@@ -16,7 +17,6 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "check-types": "tsc --noEmit --pretty",
-    "commit": "commit",
     "test": "vitest run --browser.headless",
     "test:e2e": "playwright test",
     "db-server:file": "pglite-server --db=local.db",
@@ -32,12 +32,12 @@
   },
   "dependencies": {
     "@arcjet/next": "^1.0.0-beta.8",
-    "@clerk/localizations": "^3.16.5",
-    "@clerk/nextjs": "^6.22.0",
+    "@clerk/localizations": "^3.16.4",
+    "@clerk/nextjs": "^6.21.0",
     "@electric-sql/pglite": "^0.3.3",
     "@hookform/resolvers": "^5.1.1",
     "@logtail/pino": "^0.5.5",
-    "@sentry/nextjs": "^9.29.0",
+    "@sentry/nextjs": "^9.28.0",
     "@t3-oss/env-nextjs": "^0.13.8",
     "drizzle-orm": "^0.44.2",
     "next": "^15.3.3",
@@ -45,24 +45,26 @@
     "pg": "^8.16.0",
     "pino": "^9.7.0",
     "pino-pretty": "^13.0.0",
-    "posthog-js": "^1.252.1",
+    "posthog-js": "^1.250.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-hook-form": "^7.58.0",
-    "zod": "^3.25.64"
+    "react-hook-form": "^7.57.0",
+    "zod": "^3.25.57"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^4.14.1",
     "@chromatic-com/playwright": "^0.12.5",
     "@commitlint/cli": "^19.8.1",
     "@commitlint/config-conventional": "^19.8.1",
-    "@commitlint/prompt-cli": "^19.8.1",
+    "@commitlint/cz-commitlint": "^19.8.1",
     "@electric-sql/pglite-socket": "^0.0.8",
-    "@eslint-react/eslint-plugin": "^1.52.2",
+    "@eslint-react/eslint-plugin": "^1.51.3",
     "@faker-js/faker": "^9.8.0",
     "@next/bundle-analyzer": "^15.3.3",
     "@next/eslint-plugin-next": "^15.3.3",
     "@playwright/test": "^1.53.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
     "@spotlightjs/spotlight": "^2.13.3",
     "@storybook/addon-essentials": "^8.6.14",
     "@storybook/addon-interactions": "^8.6.14",
@@ -72,22 +74,22 @@
     "@storybook/nextjs": "^8.6.14",
     "@storybook/react": "^8.6.14",
     "@storybook/test": "^8.6.14",
-    "@storybook/test-runner": "^0.23.0",
-    "@tailwindcss/postcss": "^4.1.10",
-    "@types/node": "^24.0.1",
+    "@storybook/test-runner": "^0.22.0",
+    "@tailwindcss/postcss": "^4.1.8",
+    "@types/node": "^22.15.31",
     "@types/pg": "^8.15.4",
-    "@types/react": "^19.1.8",
+    "@types/react": "^19.1.7",
     "@vitejs/plugin-react": "^4.5.2",
-    "@vitest/browser": "^3.2.3",
-    "@vitest/coverage-v8": "^3.2.3",
-    "@vitest/expect": "^3.2.3",
+    "@vitest/browser": "^3.1.4",
+    "@vitest/coverage-v8": "^3.1.4",
+    "@vitest/expect": "^3.1.4",
     "checkly": "^5.6.0",
     "chromatic": "^12.2.0",
-    "conventional-changelog-conventionalcommits": "^9.0.0",
+    "commitizen": "^4.3.1",
     "cross-env": "^7.0.3",
     "dotenv-cli": "^8.0.0",
     "drizzle-kit": "^0.31.1",
-    "eslint": "^9.29.0",
+    "eslint": "^9.28.0",
     "eslint-plugin-format": "^1.0.1",
     "eslint-plugin-jest-dom": "^5.5.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
@@ -97,17 +99,22 @@
     "http-server": "^14.1.1",
     "lefthook": "^1.11.13",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.5.5",
+    "postcss": "^8.5.4",
     "postcss-load-config": "^6.0.1",
     "rimraf": "^6.0.1",
     "semantic-release": "^24.2.5",
     "start-server-and-test": "^2.0.12",
     "storybook": "^8.6.14",
-    "tailwindcss": "^4.1.10",
+    "tailwindcss": "^4.1.8",
     "typescript": "^5.8.3",
     "vite-tsconfig-paths": "^5.1.4",
-    "vitest": "^3.2.3",
+    "vitest": "^3.1.4",
     "vitest-browser-react": "^0.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   },
   "release": {
     "branches": [
@@ -121,6 +128,14 @@
         }
       ],
       "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false
+        }
+      ],
+      "@semantic-release/git",
       "@semantic-release/github"
     ]
   }
