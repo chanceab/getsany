@@ -1,0 +1,14 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/[locale]/(marketing)/api/x/route": "/[locale]/api/x",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/[locale]/(marketing)/api/counter/route": "/[locale]/api/counter",
+  "/[locale]/(marketing)/x/page": "/[locale]/x",
+  "/[locale]/(marketing)/page": "/[locale]",
+  "/[locale]/(marketing)/youtube/page": "/[locale]/youtube",
+  "/[locale]/(auth)/(center)/sign-up/[[...sign-up]]/page": "/[locale]/sign-up/[[...sign-up]]",
+  "/[locale]/(auth)/(center)/sign-in/[[...sign-in]]/page": "/[locale]/sign-in/[[...sign-in]]",
+  "/[locale]/(auth)/dashboard/user-profile/[[...user-profile]]/page": "/[locale]/dashboard/user-profile/[[...user-profile]]",
+  "/[locale]/(auth)/dashboard/page": "/[locale]/dashboard"
+}
