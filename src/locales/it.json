@@ -252,6 +252,8 @@
       "question": "GetSany/YouTube è sicuro?",
       "answer": "Sì, GetSany/YouTube è completamente sicuro. Il nostro servizio:\n• Non richiede alcuna installazione del software\n• Non raccoglie le informazioni personali dell'utente\n• Utilizza la crittografia HTTPS per proteggere la trasmissione dei dati\n• Conduce scansioni e aggiornamenti di sicurezza regolari\n• È privo di annunci e malware"
     },
-    "parse_error": "Impossibile analizzare le informazioni sui video"
+    "parse_error": "Impossibile analizzare le informazioni sui video",
+    "audio_not_supported": "Il tuo browser non supporta la riproduzione video.",
+    "video_not_supported": "Il tuo browser non supporta la riproduzione audio."
   }
 }

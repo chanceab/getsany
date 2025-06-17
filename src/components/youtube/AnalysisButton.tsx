@@ -188,7 +188,7 @@ export function AnalysisButton() {
                           >
                             <track kind="captions" label="No captions" />
                             <source src={media.url} type={`video/${media.format || 'mp4'}`} />
-                            您的浏览器不支持视频播放
+                            {t('video_not_supported')}
                           </video>
                         )
                       : (
@@ -200,11 +200,8 @@ export function AnalysisButton() {
                             >
                               <track kind="captions" label="No captions" />
                               <source src={media.url} type={`audio/${media.format || 'webm'}`} />
-                              您的浏览器不支持音频播放
+                              {t('audio_not_supported')}
                             </audio>
-                            <div className="mt-4 text-sm text-gray-300">
-                              🎵 音频流
-                            </div>
                           </div>
                         )}
                   </div>

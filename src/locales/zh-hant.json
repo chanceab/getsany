@@ -252,6 +252,8 @@
       "question": "GetSany/YouTube安全嗎？",
       "answer": "是的，GetSany/YouTube是完全安全的。我們的服務：\n•不需要任何軟件安裝\n•不收集用戶個人信息\n•使用HTTPS加密來保護數據傳輸\n•進行定期安全掃描和更新\n•沒有廣告和惡意軟件"
     },
-    "parse_error": "無法解析視頻信息"
+    "parse_error": "無法解析視頻信息",
+    "audio_not_supported": "您的瀏覽器不支持視頻播放。",
+    "video_not_supported": "您的瀏覽器不支持音頻播放。"
   }
 }

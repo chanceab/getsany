@@ -252,6 +252,8 @@
     "faq4": {
       "question": "Est-ce que Getsany / YouTube est sûr?",
       "answer": "Oui, Getsany / YouTube est complètement en sécurité. Notre service:\n• ne nécessite aucune installation logicielle\n• Ne collecte pas les informations personnelles de l'utilisateur\n• utilise le cryptage HTTPS pour protéger la transmission des données\n• Effectue régulièrement des analyses de sécurité et des mises à jour\n• est exempt d'annonces et de logiciels malveillants"
-    }
+    },
+    "audio_not_supported": "Votre navigateur ne prend pas en charge la lecture vidéo.",
+    "video_not_supported": "Votre navigateur ne prend pas en charge la lecture audio."
   }
 }

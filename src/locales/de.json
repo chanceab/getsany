@@ -252,6 +252,8 @@
     "faq4": {
       "question": "Ist Getany/YouTube sicher?",
       "answer": "Ja, Getany/YouTube ist völlig sicher. Unser Service:\n• erfordert keine Software -Installation\n• sammelt keine persönlichen Informationen von Benutzern\n• Verwendet die HTTPS -Verschlüsselung zum Schutz der Datenübertragung\n• Führen Sie regelmäßige Sicherheits -Scans und Updates durch\n• ist frei von Anzeigen und Malware"
-    }
+    },
+    "audio_not_supported": "Ihr Browser unterstützt keine Video -Wiedergabe.",
+    "video_not_supported": "Ihr Browser unterstützt keine Audio -Wiedergabe."
   }
 }
