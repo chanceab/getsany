@@ -88,8 +88,8 @@ export const Faq = ({ namespace = 'X' }: FaqProps) => {
       </div> */}
 
       <div className="divide-y divide-gray-200">
-        {faqData.map((item, index) => (
-          <FaqItemCom key={`${item.question}-${index}`} item={item} />
+        {faqData.map(item => (
+          <FaqItemCom key={`${item.question}`} item={item} />
         ))}
       </div>
     </div>

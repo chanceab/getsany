@@ -3,8 +3,8 @@ import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { AnalysisButton } from '@/components/x/AnalysisButton';
-import { Faq } from '@/components/x/Faq';
+import { Faq } from '@/components/Faq';
+import { AnalysisButton } from '@/components/youtube/AnalysisButton';
 
 type IIndexProps = {
   params: Promise<{ locale: string }>;
