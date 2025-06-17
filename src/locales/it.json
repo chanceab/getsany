@@ -68,12 +68,6 @@
     "footer_copyright": "© 2025 GetSany.com - Strumento di download video online professionale",
     "sponsors_title": "Sponsor"
   },
-  "Counter": {
-    "meta_title": "Contatore",
-    "meta_description": "Un esempio di operazione DB",
-    "loading_counter": "Contatore di caricamento ...",
-    "error_reporting_powered_by": "Reporting di errore alimentato da"
-  },
   "CounterForm": {
     "presentation": "Il contatore è memorizzato nel database e incrementato dal valore fornito.",
     "label_increment": "Incremento di",
@@ -96,13 +90,6 @@
     "error_reporting_powered_by": "Reporting di errore alimentato da",
     "coverage_powered_by": "Copertura del codice alimentato da"
   },
-  "PortfolioSlug": {
-    "meta_title": "Portfolio {Slug}",
-    "meta_description": "Portfolio {Slug} Descrizione",
-    "header": "Portfolio {Slug}",
-    "content": "Ha creato una serie di materiali promozionali ed elementi di branding per un evento aziendale. Ha realizzato un tema visivamente unificato, che comprende un logo, poster, stendardi e risorse digitali. Ha integrato l'identità del marchio del cliente, infondendola con un approccio contemporaneo e innovativo. Ha ottenuto risposte favorevoli dai partecipanti all'evento, con conseguente evento di successo con un maggiore coinvolgimento dei partecipanti e una maggiore visibilità del marchio.",
-    "log_management_powered_by": "Gestione dei registri alimentata da"
-  },
   "SignIn": {
     "meta_title": "Registrazione",
     "meta_description": "Accedi perfettamente al tuo account con il nostro processo di accesso intuitivo."
@@ -113,7 +100,8 @@
   },
   "Dashboard": {
     "meta_title": "Pannello di controllo",
-    "hello_message": "Ciao {email}!"
+    "hello_message": "Ciao {email}!",
+    "alternative_message": "Vuoi costruire il tuo SaaS più velocemente usando lo stesso stack? \nProva <url> </url>."
   },
   "UserProfile": {
     "meta_title": "Profilo utente"
@@ -263,6 +251,7 @@
     "faq4": {
       "question": "GetSany/YouTube è sicuro?",
       "answer": "Sì, GetSany/YouTube è completamente sicuro. Il nostro servizio:\n• Non richiede alcuna installazione del software\n• Non raccoglie le informazioni personali dell'utente\n• Utilizza la crittografia HTTPS per proteggere la trasmissione dei dati\n• Conduce scansioni e aggiornamenti di sicurezza regolari\n• È privo di annunci e malware"
-    }
+    },
+    "parse_error": "Impossibile analizzare le informazioni sui video"
   }
 }

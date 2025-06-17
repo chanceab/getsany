@@ -68,12 +68,6 @@
     "footer_copyright": "© 2025 getSany.com- 전문 온라인 비디오 다운로드 도구",
     "sponsors_title": "스폰서"
   },
-  "Counter": {
-    "meta_title": "계수기",
-    "meta_description": "DB 작동의 예",
-    "loading_counter": "로딩 카운터 ...",
-    "security_powered_by": "Security, bot detection and rate limiting powered by"
-  },
   "CounterForm": {
     "presentation": "카운터는 데이터베이스에 저장되며 제공하는 값으로 증가합니다.",
     "label_increment": "증가",
@@ -96,13 +90,6 @@
     "error_reporting_powered_by": "오류보고가 전원이 켜집니다",
     "coverage_powered_by": "코드 적용 범위가 제공됩니다"
   },
-  "PortfolioSlug": {
-    "meta_title": "포트폴리오 {slug}",
-    "meta_description": "포트폴리오 {SLUG} 설명",
-    "header": "포트폴리오 {slug}",
-    "content": "기업 이벤트를위한 홍보 자료 및 브랜딩 요소 세트를 만들었습니다. 로고, 포스터, 배너 및 디지털 자산을 포함하는 시각적으로 통일 된 테마를 제작했습니다. 현대적이고 혁신적인 접근 방식으로 고객의 브랜드 아이덴티티를 통합했습니다. 이벤트 참석자들로부터 유리한 응답을 얻었으므로 참가자 참여가 높아지고 브랜드 가시성이 높아짐에 따라 성공적인 이벤트가되었습니다.",
-    "code_review_powered_by": "Code review powered by"
-  },
   "SignIn": {
     "meta_title": "로그인",
     "meta_description": "사용자 친화적 인 로그인 프로세스를 사용하여 계정에 원활하게 로그인하십시오."
@@ -114,7 +101,7 @@
   "Dashboard": {
     "meta_title": "계기반",
     "hello_message": "안녕하세요 {이메일}!",
-    "alternative_message": "Want to build your SaaS faster using the same stack? Try <url></url>."
+    "alternative_message": "같은 스택을 사용하여 SaaS를 더 빨리 구축하고 싶습니까? \n<url> </url>을 시도하십시오."
   },
   "UserProfile": {
     "meta_title": "사용자 프로필"
@@ -246,7 +233,7 @@
     "downloading": "다운로드",
     "validation_error1": "비디오 링크를 입력하십시오",
     "validation_error2": "유효한 YouTube 비디오 링크를 입력하십시오",
-    "parse_error": "Failed to parse video information",
+    "parse_error": "비디오 정보를 구문 분석하지 못했습니다",
     "analysis_error": "다운로드 실패, 나중에 다시 시도하십시오",
     "welcome2": "YouTube에서 비디오를 다운로드하기 위해 특별히 설계된 도구 인 Getsany에 오신 것을 환영합니다. 우리는 필요한 콘텐츠를 쉽게 얻을 수 있도록 완전 무료 서비스를 제공합니다.",
     "faq": "FAQ",

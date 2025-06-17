@@ -68,12 +68,6 @@
     "footer_copyright": "© 2025 GetSany.com - outil professionnel de téléchargement vidéo en ligne",
     "sponsors_title": "Sponsors"
   },
-  "Counter": {
-    "meta_title": "Comptoir",
-    "meta_description": "Un exemple de fonctionnement de la base de données",
-    "loading_counter": "Compteur de chargement ...",
-    "security_powered_by": "Security, bot detection and rate limiting powered by"
-  },
   "CounterForm": {
     "presentation": "Le compteur est stocké dans la base de données et incrémenté par la valeur que vous fournissez.",
     "label_increment": "Incrément de",
@@ -96,13 +90,6 @@
     "error_reporting_powered_by": "Rapports d'erreur alimentés par",
     "coverage_powered_by": "Couverture de code alimentée par"
   },
-  "PortfolioSlug": {
-    "meta_title": "Portfolio {Slug}",
-    "meta_description": "Portfolio {slug} Description",
-    "header": "Portfolio {Slug}",
-    "content": "A créé un ensemble de documents promotionnels et d'éléments de marque pour un événement d'entreprise. Craft un thème visuellement unifié, englobant un logo, des affiches, des bannières et des actifs numériques. A intégré l'identité de la marque du client tout en les affusant avec une approche contemporaine et innovante. A recueilli des réponses favorables des participants à l'événement, entraînant un événement réussi avec un engagement accru des participants et une visibilité accrue de la marque.",
-    "code_review_powered_by": "Code review powered by"
-  },
   "SignIn": {
     "meta_title": "Se connecter",
     "meta_description": "Connectez-vous de manière transparente à votre compte avec notre processus de connexion convivial."
@@ -114,7 +101,7 @@
   "Dashboard": {
     "meta_title": "Tableau de bord",
     "hello_message": "Bonjour {email}!",
-    "alternative_message": "Vous voulez créer votre SaaS plus rapidement en utilisant la même stack ? Essayez <url></url>."
+    "alternative_message": "Vous voulez construire votre SaaS plus rapidement en utilisant la même pile? \nEssayez <url> </url>."
   },
   "UserProfile": {
     "meta_title": "Profil utilisateur"
@@ -246,7 +233,7 @@
     "downloading": "Téléchargement",
     "validation_error1": "Veuillez saisir un lien vidéo",
     "validation_error2": "Veuillez saisir un lien vidéo YouTube valide",
-    "parse_error": "Failed to parse video information",
+    "parse_error": "Échec de l'analyse des informations vidéo",
     "analysis_error": "Le téléchargement a échoué, veuillez réessayer plus tard",
     "welcome2": "Bienvenue à Getsany, un outil conçu spécifiquement pour télécharger des vidéos à partir de YouTube. Nous offrons un service entièrement gratuit pour vous aider à obtenir facilement le contenu dont vous avez besoin.",
     "faq": "FAQ",

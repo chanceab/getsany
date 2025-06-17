@@ -68,12 +68,6 @@
     "footer_copyright": "©2025 GetSany.com-专业在线视频下载工具",
     "sponsors_title": "赞助商"
   },
-  "Counter": {
-    "meta_title": "柜台",
-    "meta_description": "DB操作的一个例子",
-    "loading_counter": "加载计数器...",
-    "security_powered_by": "Security, bot detection and rate limiting powered by"
-  },
   "CounterForm": {
     "presentation": "计数器存储在数据库中，并通过您提供的值增加。",
     "label_increment": "增量",
@@ -96,13 +90,6 @@
     "error_reporting_powered_by": "错误报告由",
     "coverage_powered_by": "代码覆盖范围由"
   },
-  "PortfolioSlug": {
-    "meta_title": "portfolio {slug}",
-    "meta_description": "portfolio {slug}描述",
-    "header": "portfolio {slug}",
-    "content": "为公司活动创建了一套促销材料和品牌元素。精心设计了一个视觉统一的主题，包括徽标，海报，横幅和数字资产。将客户的品牌标识融合在一起，同时将其注入现代和创新的方法。活动与会者获得了良好的回应，从而获得了成功的活动，并提高了参与者的参与度并提高了品牌知名度。",
-    "code_review_powered_by": "Code review powered by"
-  },
   "SignIn": {
     "meta_title": "登入",
     "meta_description": "通过我们的用户友好登录过程无缝登录您的帐户。"
@@ -114,7 +101,7 @@
   "Dashboard": {
     "meta_title": "仪表板",
     "hello_message": "您好{电子邮件}！",
-    "alternative_message": "Want to build your SaaS faster using the same stack? Try <url></url>."
+    "alternative_message": "是否想使用相同的堆栈更快地构建SaaS？\n尝试<URL> </url>。"
   },
   "UserProfile": {
     "meta_title": "用户配置文件"
@@ -246,7 +233,7 @@
     "downloading": "下载",
     "validation_error1": "请输入视频链接",
     "validation_error2": "请输入有效的YouTube视频链接",
-    "parse_error": "Failed to parse video information",
+    "parse_error": "无法解析视频信息",
     "analysis_error": "下载失败，请稍后再试",
     "welcome2": "欢迎使用专门从YouTube下载视频的工具GetSany。我们提供一项完全免费的服务，以帮助您轻松获得所需的内容。",
     "faq": "FAQ",

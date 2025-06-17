@@ -68,12 +68,6 @@
     "footer_copyright": "© 2025 getany.com - professionelles Online -Video -Download -Tool",
     "sponsors_title": "Sponsoren"
   },
-  "Counter": {
-    "meta_title": "Schalter",
-    "meta_description": "Ein Beispiel für den DB -Betrieb",
-    "loading_counter": "Ladeschotung ...",
-    "security_powered_by": "Security, bot detection and rate limiting powered by"
-  },
   "CounterForm": {
     "presentation": "Der Zähler wird in der Datenbank gespeichert und durch den von Ihnen angegebenen Wert erhöht.",
     "label_increment": "Inkrement von",
@@ -96,13 +90,6 @@
     "error_reporting_powered_by": "Fehlerberichterstattung durchgesetzt von",
     "coverage_powered_by": "Codeabdeckung von Strom versorgt von"
   },
-  "PortfolioSlug": {
-    "meta_title": "Portfolio {Slug}",
-    "meta_description": "Portfolio {Slug} Beschreibung",
-    "header": "Portfolio {Slug}",
-    "content": "Erstellte eine Reihe von Werbematerialien und Markenelementen für eine Unternehmensereignis. Erstellte ein visuell einheitliches Thema, das ein Logo, Plakate, Banner und digitale Vermögenswerte umfasst. Integrierte die Markenidentität des Kunden und integrierte sie mit einem zeitgenössischen und innovativen Ansatz. Erbringte günstige Antworten von Veranstaltungsbeteiligten, was zu einer erfolgreichen Veranstaltung mit gesteigertem Engagement der Teilnehmer und einer erhöhten Markensichtbarkeit führte.",
-    "code_review_powered_by": "Code review powered by"
-  },
   "SignIn": {
     "meta_title": "anmelden",
     "meta_description": "Melden Sie sich nahtlos bei unserem benutzerfreundlichen Anmeldungsprozess in Ihrem Konto an."
@@ -114,7 +101,7 @@
   "Dashboard": {
     "meta_title": "Armaturenbrett",
     "hello_message": "Hallo {E -Mail}!",
-    "alternative_message": "Want to build your SaaS faster using the same stack? Try <url></url>."
+    "alternative_message": "Möchten Sie Ihre SaaS schneller mit demselben Stapel bauen? \nVersuchen Sie <URL> </url>."
   },
   "UserProfile": {
     "meta_title": "Benutzerprofil"
@@ -246,7 +233,7 @@
     "downloading": "Herunterladen",
     "validation_error1": "Bitte geben Sie einen Videolink ein",
     "validation_error2": "Bitte geben Sie einen gültigen YouTube -Videolink ein",
-    "parse_error": "Failed to parse video information",
+    "parse_error": "Videoinformationen nicht analysieren",
     "analysis_error": "Download fehlgeschlagen, bitte versuchen Sie es später erneut",
     "welcome2": "Willkommen bei GetSy, einem Tool, das speziell zum Herunterladen von Videos von YouTube entwickelt wurde. Wir bieten einen komplett kostenlosen Service, mit dem Sie den Inhalt, den Sie benötigen, problemlos erhalten.",
     "faq": "FAQ",

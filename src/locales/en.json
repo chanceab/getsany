@@ -68,12 +68,6 @@
     "footer_copyright": "© 2025 GetsAny.com - Professional Online Video Download Tool",
     "sponsors_title": "Sponsors"
   },
-  "Counter": {
-    "meta_title": "Counter",
-    "meta_description": "An example of DB operation",
-    "loading_counter": "Loading counter...",
-    "security_powered_by": "Security, bot detection and rate limiting powered by"
-  },
   "CounterForm": {
     "presentation": "The counter is stored in the database and incremented by the value you provide.",
     "label_increment": "Increment by",
@@ -95,13 +89,6 @@
     "portfolio_name": "Portfolio {name}",
     "error_reporting_powered_by": "Error reporting powered by",
     "coverage_powered_by": "Code coverage powered by"
-  },
-  "PortfolioSlug": {
-    "meta_title": "Portfolio {slug}",
-    "meta_description": "Portfolio {slug} description",
-    "header": "Portfolio {slug}",
-    "content": "Created a set of promotional materials and branding elements for a corporate event. Crafted a visually unified theme, encompassing a logo, posters, banners, and digital assets. Integrated the client's brand identity while infusing it with a contemporary and innovative approach.",
-    "code_review_powered_by": "Code review powered by"
   },
   "SignIn": {
     "meta_title": "Sign in",
@@ -266,6 +253,5 @@
       "question": "Is GetsAny/YouTube safe?",
       "answer": "Yes, GetsAny/YouTube is completely safe. Our service:\n• Does not require any software installation\n• Does not collect user personal information\n• Uses HTTPS encryption to protect data transmission\n• Conducts regular security scans and updates\n• Is free of ads and malware"
     }
-
   }
 }

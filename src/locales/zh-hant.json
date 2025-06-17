@@ -68,12 +68,6 @@
     "footer_copyright": "©2025 GetSany.com-專業在線視頻下載工具",
     "sponsors_title": "贊助商"
   },
-  "Counter": {
-    "meta_title": "櫃檯",
-    "meta_description": "DB操作的一個例子",
-    "loading_counter": "加載計數器...",
-    "error_reporting_powered_by": "錯誤報告由"
-  },
   "CounterForm": {
     "presentation": "計數器存儲在數據庫中，並通過您提供的值增加。",
     "label_increment": "增量",
@@ -96,13 +90,6 @@
     "error_reporting_powered_by": "錯誤報告由",
     "coverage_powered_by": "代碼覆蓋範圍由"
   },
-  "PortfolioSlug": {
-    "meta_title": "portfolio {slug}",
-    "meta_description": "portfolio {slug}描述",
-    "header": "portfolio {slug}",
-    "content": "為公司活動創建了一套促銷材料和品牌元素。精心設計了一個視覺統一的主題，包括徽標，海報，橫幅和數字資產。將客戶的品牌標識融合在一起，同時將其註入現代和創新的方法。活動與會者獲得了良好的回應，從而獲得了成功的活動，並提高了參與者的參與度並提高了品牌知名度。",
-    "log_management_powered_by": "原木管理由"
-  },
   "SignIn": {
     "meta_title": "登入",
     "meta_description": "通過我們的用戶友好登錄過程無縫登錄您的帳戶。"
@@ -113,7 +100,8 @@
   },
   "Dashboard": {
     "meta_title": "儀表板",
-    "hello_message": "您好{電子郵件}！"
+    "hello_message": "您好{電子郵件}！",
+    "alternative_message": "是否想使用相同的堆棧更快地構建SaaS？嘗試<URL> </url>。"
   },
   "UserProfile": {
     "meta_title": "用戶配置文件"
@@ -263,6 +251,7 @@
     "faq4": {
       "question": "GetSany/YouTube安全嗎？",
       "answer": "是的，GetSany/YouTube是完全安全的。我們的服務：\n•不需要任何軟件安裝\n•不收集用戶個人信息\n•使用HTTPS加密來保護數據傳輸\n•進行定期安全掃描和更新\n•沒有廣告和惡意軟件"
-    }
+    },
+    "parse_error": "無法解析視頻信息"
   }
 }
