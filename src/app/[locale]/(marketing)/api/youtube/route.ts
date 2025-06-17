@@ -10,7 +10,7 @@ import { NextResponse } from 'next/server';
 
 const execPromise = util.promisify(exec);
 
-const regex = /^(?:https?:\/\/)?(?:www\.)?(?:x\.com|twitter\.com)\/\w+\/status\/\d+$/;
+const regex = /^(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?v=[\w-]{11}$/;
 
 export async function POST(request: Request): Promise<NextResponse> {
   try {
@@ -25,7 +25,7 @@ export async function POST(request: Request): Promise<NextResponse> {
 
     if (!regex.test(url)) {
       return NextResponse.json(
-        { error: '请提供有效的 X 平台视频链接' },
+        { error: '请提供有效的 YouTube 视频链接' },
         { status: 500 },
       );
     }
