@@ -19,7 +19,7 @@ export const LocaleSwitcher = () => {
   const handleChange = (newLocale: string) => {
     router.push(pathname, { locale: newLocale });
 
-    // router.refresh(); // Ensure the page takes the new locale into account related to the issue #395
+    router.refresh(); // Ensure the page takes the new locale into account related to the issue #395
     setIsOpen(false);
   };
 
