@@ -13,7 +13,7 @@ type IIndexProps = {
 export async function generateMetadata(props: IIndexProps) {
   const t = await getTranslations({
     locale: (await props.params).locale,
-    namespace: 'X',
+    namespace: 'Youtube',
   });
 
   return {
@@ -22,7 +22,7 @@ export async function generateMetadata(props: IIndexProps) {
   };
 }
 
-export default function XPage() {
+export default function YoutubePage() {
   const t = useTranslations('Youtube');
 
   return (

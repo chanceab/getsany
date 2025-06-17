@@ -61,5 +61,6 @@
     "pcss",
     "postcss",
     "github-actions-workflow"
-  ]
+  ],
+  "i18n-ally.sourceLanguage": "en"
 }

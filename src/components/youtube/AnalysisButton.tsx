@@ -4,20 +4,14 @@ import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 
 // 修改 regex 来匹配 YouTube 链接
-export const regex = /^(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)[\w-]+$/;
+const regex = /^(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)[\w-]+$/;
 
-type MediaStream = {
+const parseUrlRegex = /^https?:\/\//;
+type Media = {
   url: string;
   type: 'video' | 'audio';
   quality?: string;
   format?: string;
-};
-
-type YouTubeMediaObject = {
-  title: string;
-  thumbnail?: string;
-  duration?: string;
-  streams: MediaStream[];
 };
 
 export function AnalysisButton() {
@@ -26,14 +20,20 @@ export function AnalysisButton() {
   const [userInput, setUserInput] = useState<string>('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string>('');
-  const [mediaData, setMediaData] = useState<YouTubeMediaObject | null>(null);
+  const [mediaData, setMediaData] = useState<Media[] | null>(null);
 
   const isValidUrl = (url: string): boolean => {
     return regex.test(url);
   };
 
-  const parseYouTubeStreams = (streams: string[]): MediaStream[] => {
-    return streams.map((streamUrl, index) => {
+  const parseYouTubeStreams = (streams: string): Media[] => {
+    const list = streams.split('\n').filter(Boolean);
+
+    // 遍历解析的数据 如果不是链接 直接报错
+    if (list.some(stream => !parseUrlRegex.test(stream))) {
+      throw new Error(t('parse_error'));
+    }
+    return list.map((streamUrl, index) => {
       // 根据 URL 参数判断是视频还是音频
       const urlParams = new URLSearchParams(streamUrl.split('?')[1]);
       const mime = urlParams.get('mime') || '';
@@ -53,10 +53,9 @@ export function AnalysisButton() {
         };
       }
 
-      // 默认处理：第一个是视频，第二个是音频
       return {
         url: streamUrl,
-        type: index === 0 ? 'video' : 'audio',
+        type: mime.includes('video') ? 'video' : 'audio',
         quality: index === 0 ? 'HD' : undefined,
         format: index === 0 ? 'mp4' : 'webm',
       };
@@ -72,7 +71,7 @@ export function AnalysisButton() {
     }
 
     if (!isValidUrl(userInput)) {
-      setError('请输入有效的 YouTube 链接');
+      setError(t('validation_error2'));
       return;
     }
 
@@ -90,19 +89,12 @@ export function AnalysisButton() {
 
       // 假设 API 返回格式为 { title: string, streams: string[] }
       // 你需要根据实际 API 返回格式调整这部分
-      const parsedStreams = parseYouTubeStreams(data.streams || data);
+      const parsedStreams = parseYouTubeStreams(data);
 
-      const mediaObject: YouTubeMediaObject = {
-        title: data.title || 'YouTube Video',
-        thumbnail: data.thumbnail,
-        duration: data.duration,
-        streams: parsedStreams,
-      };
-
-      setMediaData(mediaObject);
+      setMediaData(parsedStreams);
     } catch (err) {
-      console.error('下载错误:', err);
-      setError('下载失败，请稍后重试');
+      console.error('解析失败:', err);
+      setError(t('parse_error'));
     } finally {
       setIsLoading(false);
     }
@@ -154,24 +146,13 @@ export function AnalysisButton() {
       {mediaData && (
         <div className="mt-6 space-y-4">
           <div className="overflow-hidden rounded-lg bg-white p-6 shadow-lg">
-            <div className="mb-4">
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                {mediaData.title}
-              </h3>
-              {mediaData.duration && (
-                <p className="text-sm text-gray-600">
-                  时长:
-                  {mediaData.duration}
-                </p>
-              )}
-            </div>
 
             <div className="space-y-6">
-              {mediaData.streams.map(stream => (
-                <div key={stream.url} className="border rounded-lg p-4 bg-gray-50">
+              {mediaData.map(media => (
+                <div key={media.url} className="border rounded-lg p-4 bg-gray-50">
                   <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center gap-2">
-                      {stream.type === 'video'
+                      {media.type === 'video'
                         ? (
                             <svg className="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
                               <path d="M2 6a2 2 0 012-2h6l2 2h6a2 2 0 012 2v6a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM5 8a1 1 0 000 2h8a1 1 0 100-2H5z" />
@@ -183,24 +164,22 @@ export function AnalysisButton() {
                               <path d="M14.657 2.929a1 1 0 011.414 0A9.972 9.972 0 0119 10a9.972 9.972 0 01-2.929 7.071 1 1 0 01-1.414-1.414A7.971 7.971 0 0017 10c0-2.21-.894-4.208-2.343-5.657a1 1 0 010-1.414zm-2.829 2.828a1 1 0 011.415 0A5.983 5.983 0 0115 10a5.984 5.984 0 01-1.757 4.243 1 1 0 01-1.415-1.415A3.984 3.984 0 0013 10a3.983 3.983 0 00-1.172-2.828 1 1 0 010-1.415z" />
                             </svg>
                           )}
-                      <span className="font-medium text-gray-700">
-                        {stream.type === 'video' ? '视频流' : '音频流'}
-                      </span>
-                      {stream.quality && (
+
+                      {media.quality && (
                         <span className="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">
-                          {stream.quality}
+                          {media.quality}
                         </span>
                       )}
-                      {stream.format && (
+                      {media.format && (
                         <span className="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">
-                          {stream.format.toUpperCase()}
+                          {media.format.toUpperCase()}
                         </span>
                       )}
                     </div>
                   </div>
 
                   <div className="relative overflow-hidden rounded-lg bg-black">
-                    {stream.type === 'video'
+                    {media.type === 'video'
                       ? (
                           <video
                             controls
@@ -208,7 +187,7 @@ export function AnalysisButton() {
                             preload="metadata"
                           >
                             <track kind="captions" label="No captions" />
-                            <source src={stream.url} type={`video/${stream.format || 'mp4'}`} />
+                            <source src={media.url} type={`video/${media.format || 'mp4'}`} />
                             您的浏览器不支持视频播放
                           </video>
                         )
@@ -220,7 +199,7 @@ export function AnalysisButton() {
                               preload="metadata"
                             >
                               <track kind="captions" label="No captions" />
-                              <source src={stream.url} type={`audio/${stream.format || 'webm'}`} />
+                              <source src={media.url} type={`audio/${media.format || 'webm'}`} />
                               您的浏览器不支持音频播放
                             </audio>
                             <div className="mt-4 text-sm text-gray-300">

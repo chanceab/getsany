@@ -246,6 +246,7 @@
     "downloading": "Downloading",
     "validation_error1": "Please enter a video link",
     "validation_error2": "Please enter a valid YouTube video link",
+    "parse_error": "Failed to parse video information",
     "analysis_error": "Download failed, please try again later",
     "welcome2": "Welcome to GetsAny, a tool designed specifically for downloading videos from YouTube. We offer a completely free service to help you easily obtain the content you need.",
     "faq": "FAQ",
@@ -265,5 +266,6 @@
       "question": "Is GetsAny/YouTube safe?",
       "answer": "Yes, GetsAny/YouTube is completely safe. Our service:\n• Does not require any software installation\n• Does not collect user personal information\n• Uses HTTPS encryption to protect data transmission\n• Conducts regular security scans and updates\n• Is free of ads and malware"
     }
+
   }
 }
