@@ -113,7 +113,7 @@
   },
   "X": {
     "analysis": "Analyser",
-    "analyzing": "Analyse",
+    "analyzing": "Analyse actuellement",
     "meta_title": "X (Twitter) Downloader vidéo - Outil de téléchargement en ligne gratuit",
     "meta_description": "Outil de téléchargement vidéo professionnel X (Twitter), prend en charge les téléchargements vidéo, image et audio HD, aucune inscription requise, complètement gratuite",
     "badge_text": "📱 X (Twitter) Downloader dédié",
@@ -184,7 +184,7 @@
   },
   "Youtube": {
     "analysis": "Analyser",
-    "analyzing": "Analyse",
+    "analyzing": "Analyse actuellement",
     "meta_title": "Téléchargeur de vidéos YouTube - outil de téléchargement en ligne gratuit",
     "meta_description": "Outil de téléchargement vidéo YouTube professionnel, prend en charge les téléchargements vidéo et audio HD, aucune inscription requise, complètement gratuite",
     "badge_text": "📹 Téléchargeur dédié YouTube",
