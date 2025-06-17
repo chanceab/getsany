@@ -246,6 +246,7 @@
     "downloading": "Téléchargement",
     "validation_error1": "Veuillez saisir un lien vidéo",
     "validation_error2": "Veuillez saisir un lien vidéo YouTube valide",
+    "parse_error": "Failed to parse video information",
     "analysis_error": "Le téléchargement a échoué, veuillez réessayer plus tard",
     "welcome2": "Bienvenue à Getsany, un outil conçu spécifiquement pour télécharger des vidéos à partir de YouTube. Nous offrons un service entièrement gratuit pour vous aider à obtenir facilement le contenu dont vous avez besoin.",
     "faq": "FAQ",

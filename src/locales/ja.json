@@ -246,6 +246,7 @@
     "downloading": "ダウンロード",
     "validation_error1": "ビデオリンクを入力してください",
     "validation_error2": "有効なYouTubeビデオリンクを入力してください",
+    "parse_error": "Failed to parse video information",
     "analysis_error": "ダウンロードに失敗しました、後でもう一度やり直してください",
     "welcome2": "YouTubeからビデオをダウンロードするために特別に設計されたツールであるGetsanyへようこそ。必要なコンテンツを簡単に取得できるように、完全に無料のサービスを提供しています。",
     "faq": "よくある質問",

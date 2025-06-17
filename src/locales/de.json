@@ -246,6 +246,7 @@
     "downloading": "Herunterladen",
     "validation_error1": "Bitte geben Sie einen Videolink ein",
     "validation_error2": "Bitte geben Sie einen gültigen YouTube -Videolink ein",
+    "parse_error": "Failed to parse video information",
     "analysis_error": "Download fehlgeschlagen, bitte versuchen Sie es später erneut",
     "welcome2": "Willkommen bei GetSy, einem Tool, das speziell zum Herunterladen von Videos von YouTube entwickelt wurde. Wir bieten einen komplett kostenlosen Service, mit dem Sie den Inhalt, den Sie benötigen, problemlos erhalten.",
     "faq": "FAQ",

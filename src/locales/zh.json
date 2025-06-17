@@ -246,6 +246,7 @@
     "downloading": "下载",
     "validation_error1": "请输入视频链接",
     "validation_error2": "请输入有效的YouTube视频链接",
+    "parse_error": "Failed to parse video information",
     "analysis_error": "下载失败，请稍后再试",
     "welcome2": "欢迎使用专门从YouTube下载视频的工具GetSany。我们提供一项完全免费的服务，以帮助您轻松获得所需的内容。",
     "faq": "FAQ",
