@@ -61,13 +61,13 @@ export default function RechargePage() {
 
       let currentPhaseIndex = 0;
       let timeoutId: NodeJS.Timeout | null = null;
+      let initialTimeoutId: NodeJS.Timeout | null = null;
 
       const runPhase = () => {
         const currentPhaseData = phases[currentPhaseIndex];
         if (currentPhaseData) {
-          setBreathingPhase(currentPhaseData.phase as any);
-
           timeoutId = setTimeout(() => {
+            setBreathingPhase(currentPhaseData.phase as any);
             currentPhaseIndex = (currentPhaseIndex + 1) % phases.length;
             if (currentPhaseIndex === 0) {
               setBreathingCount(prev => prev + 1);
@@ -77,14 +77,24 @@ export default function RechargePage() {
         }
       };
 
-      runPhase();
+      // Set initial phase asynchronously to avoid direct state update in effect
+      initialTimeoutId = setTimeout(() => {
+        if (phases[0]) {
+          setBreathingPhase(phases[0].phase as any);
+        }
+        runPhase();
+      }, 0);
 
       return () => {
         if (timeoutId) {
           clearTimeout(timeoutId);
         }
+        if (initialTimeoutId) {
+          clearTimeout(initialTimeoutId);
+        }
       };
     }
+    return undefined;
   }, [currentActivity]);
 
   const renderBreathingExercise = () => (
@@ -126,8 +136,8 @@ export default function RechargePage() {
         简单伸展运动 🤸‍♀️
       </h3>
       <div className="grid gap-4">
-        {exercises.map((exercise, index) => (
-          <div key={index} className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
+        {exercises.map(exercise => (
+          <div key={exercise.name} className="bg-white p-4 rounded-lg border border-gray-200 shadow-sm">
             <div className="flex justify-between items-center mb-2">
               <h4 className="font-medium text-gray-800">{exercise.name}</h4>
               <span className="text-sm text-gray-500 bg-gray-100 px-2 py-1 rounded">
