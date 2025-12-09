@@ -1,4 +1,4 @@
-import type { ChromaticConfig } from '@chromatic-com/playwright';
+import type { PlaywrightTestConfig } from '@playwright/test';
 import { defineConfig, devices } from '@playwright/test';
 
 // Use process.env.PORT by default and fallback to port 3000
@@ -10,7 +10,7 @@ const baseURL = `http://localhost:${PORT}`;
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
-export default defineConfig<ChromaticConfig>({
+export default defineConfig<PlaywrightTestConfig>({
   testDir: './tests',
   // Look for files with the .spec.js or .e2e.js extension
   testMatch: '*.@(spec|e2e).?(c|m)[jt]s?(x)',
@@ -49,12 +49,6 @@ export default defineConfig<ChromaticConfig>({
 
     // Record videos when retrying the failed test.
     video: process.env.CI ? 'retain-on-failure' : undefined,
-
-    // Disable automatic screenshots at test completion when using Chromatic test fixture.
-    disableAutoSnapshot: true,
-
-    // Amount of time each test will wait for the network to be idle
-    resourceArchiveTimeout: 30 * 1000,
   },
 
   projects: [

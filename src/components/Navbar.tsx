@@ -68,6 +68,7 @@ export const Navbar = ({ showLocaleSwitcher = false, LocaleSwitcher }: NavbarPro
             )}
 
             <button
+              type="button"
               onClick={() => setIsOpen(!isOpen)}
               className="rounded-lg p-2 text-gray-700 transition-colors hover:bg-gray-100"
               aria-label="Toggle menu"

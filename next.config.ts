@@ -5,7 +5,7 @@ import createNextIntlPlugin from 'next-intl/plugin';
 import './src/libs/Env';
 
 // Define the base Next.js configuration
-const baseConfig: NextConfig = {
+const baseConfig: NextConfig & { eslint?: { dirs: string[] } } = {
   eslint: {
     dirs: ['.'],
   },

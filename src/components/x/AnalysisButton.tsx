@@ -1,9 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { useState } from 'react';
 
-export const regex = /^(?:https?:\/\/)?(?:www\.)?(?:x\.com|twitter\.com)\/\w+\/status\/\d+$/;
+const regex = /^(?:https?:\/\/)?(?:www\.)?(?:x\.com|twitter\.com)\/\w+\/status\/\d+$/;
 
 type Stream = {
   container: string;
@@ -181,12 +182,10 @@ export function AnalysisButton() {
                   </video>
                 )
               }
-
               {
-                getMediaType(media) === 'image' && (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={media.streams.__default__.src[0] || ''}
+                getMediaType(media) === 'image' && media.streams.__default__.src[0] && (
+                  <Image
+                    src={media.streams.__default__.src[0]}
                     alt={media.title}
                     className="h-auto w-full object-cover transition hover:opacity-90"
                     width={800}
@@ -195,6 +194,7 @@ export function AnalysisButton() {
                   />
                 )
               }
+
             </div>
           </div>
         ))}

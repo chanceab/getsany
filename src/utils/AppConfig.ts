@@ -1,5 +1,6 @@
 import type { LocalizationResource } from '@clerk/types';
 import type { LocalePrefixMode } from 'next-intl/routing';
+
 import { deDE, enUS, frFR, itIT, jaJP, koKR, ruRU, zhCN, zhTW } from '@clerk/localizations';
 
 const localePrefix: LocalePrefixMode = 'never';
